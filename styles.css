@@ -7,10 +7,20 @@
     --dark-bg: #0a0a0a;
     --darker-bg: #050505;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background-color: var(--dark-bg);
-    color:var(--text);
+    color: var(--text);
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -70,10 +80,10 @@ body{
 
 /*hero section*/
 #Home{
-    min-width: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    padding:12% 5%;
+    padding: 12% 5%;
     background: radial-gradient(circle at 75% 30%, var(--accent-glow) 0%, transparent 30%);
 }
 
@@ -85,7 +95,7 @@ body{
 .hero-image{
     flex: 1;
     text-align: center;
-    position:relative
+    position: relative;
 }   
 
 .profile-image{
@@ -96,7 +106,7 @@ body{
     border: 3px solid var(--accent);
     box-shadow: 0 0 50px var(--accent-glow);
     animation: float 3s ease-in-out infinite;
-    filter : grayscale(0.2) contrast(1.1);
+    filter: grayscale(0.2) contrast(1.1);
 }
 
 @keyframes float{
@@ -106,16 +116,17 @@ body{
     50%{
         transform: translateY(-20px);
     }
-} 
+}
 
 .hero h1{
     font-size: 3rem;
     margin-bottom: 1.5rem;
     background: linear-gradient(45deg, var(--accent) 30%, #ffffff 70%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;    
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
 }
-  
 
 .hero p{
     font-size: 1.2rem;
@@ -130,95 +141,172 @@ body{
     background: linear-gradient(45deg, var(--accent), #27ae60);
     color: white;
     border-radius: 8px;
-    text-decoration:none;
-    transition:all 0.3s ease;
+    text-decoration: none;
+    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    font-weight: 600;
+}
+
+.cta-button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(46,204,113,0.3);
+}
+
+/*skills section*/
+.skills{
+    padding: 5rem 5%;
+    background: var(--darker-bg);
+}
+
+.skills h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text);
+    font-weight: 700;
+}
+
+.skills-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.skill-card{
+    padding: 2rem;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+}
+
+.skill-card:hover{
+    transform: translateY(-10px);
+    border-color: var(--accent);
+    box-shadow: 0 10px 30px var(--accent-glow);
+}
+
+.skill-card i{
+    font-size: 3rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.skill-card h3{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.skill-card p{
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/*footer*/
+footer{
+    background: var(--dark-bg);
+    padding: 3rem 5%;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+footer p{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1.5rem;
+}
+
+.social-links{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.social-links a{
+    color: var(--text);
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(46, 204, 113, 0.3);
+    line-height: 1;
+}   
+
+.social-links a:hover{
+    color: var(--accent);
+    background: rgba(46, 204, 113, 0.1);
+    border-color: var(--accent);
+    transform: translateY(-3px);
+}
+
+.social-links a i{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    font-size: 1.5rem;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 400;
+}
+
+/*Mobile Responsive*/
+@media (max-width: 768px){
+    #Home{
+        flex-direction: column;
+        padding-top: 8rem;
+        padding-bottom: 3rem;
     }
 
-    /*skills section*/
-    .skills{
-        padding: 5rem 5%;
-        background: var(--darker-bg);
-    }
-
-    .skills-grid{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 2rem;
-        margin-top: 3rem;
-    }
-
-    .skill-card{
-        padding:2rem;
-        border-radius: 15px;
-        background: rgba(255, 255, 255, 0.05);
-        transition: all 0.3s ease;
-        border: 1px solid rgba(255,255,255,0.1);
-        backdrop-filter: blur(5px);
-    }
-
-    .skill-card:hover{
-        transform: translateY(-10px);
-        border-color: var(--accent);
-        box-shadow: 0 10px 30px var(--accent-glow);
-    }
-
-    .skill-card i{
-        font-size: 3rem;
-        color: var(--accent);
-        margin-bottom: 1rem;
-    }
-
-    /*footer*/
-    footer{
-        background: var(--dark-bg);
-        padding: 3rem 5%;
+    .hero-content{
+        padding-right: 0;
+        margin-bottom: 3rem;
         text-align: center;
-        border-top: 1px solid rgba(255,255,255,0.1);
     }
 
-    .social-links{
-        margin-top: 2rem;
+    .hero h1{
+        font-size: 2rem;
+    }
+
+    .hero p{
+        font-size: 1rem;
+    }
+
+    .hero-image{
         display: flex;
         justify-content: center;
-        gap: 2rem;
     }
 
-    .social-links a{
-        color: var(--text);
+    .profile-image{
+        width: 280px;
+        height: 280px;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .logo{
         font-size: 1.5rem;
-        transition: all 0.3s ease;
-    }   
-
-    .social-links a:hover{
-        color: var(--accent);
-        transform: translateY(-3px);
+        padding-left: 2rem;
     }
 
-    @media (max-width: 768px){
-        .hero h1{
-            flex-direction: column;
-            text-align: center;
-            padding-top: 8rem;
-        }
-        .hero-content{
-            padding-right: 0;
-            margin-bottom: 3rem;
-        }
-
-        .profile-image{
-            width: 280px;
-            height: 280px;
-        }
-
-        .nav-links{
-            display: none;
-        }
-
-        .logo{
-            font-size: 1.5rem;
-            padding-left: 2rem;
-        }
-
+    .skills h2{
+        font-size: 1.8rem;
     }
+
+    .cta-button{
+        font-size: 0.9rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
