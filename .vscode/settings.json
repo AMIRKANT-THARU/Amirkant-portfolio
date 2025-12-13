@@ -1,8 +1,10 @@
 {
   // Suggested Live Server workspace settings to open the homepage by default
-  "liveServer.settings.root": "/",
-  // Try to set startPath to index.html (some Live Server versions respect this)
-  "liveServer.settings.startPath": "/index.html",
+  "liveServer.settings.root": ".",
+  // Use a relative startPath which is more widely supported by Live Server
+  "liveServer.settings.startPath": "index.html",
   // Do not show informational messages from the extension
-  "liveServer.settings.donotShowInfoMsg": true
+  "liveServer.settings.donotShowInfoMsg": true,
+  // Ensure Live Server opens the configured startPath instead of the last opened file
+  "liveServer.settings.useLocalIp": false
 }
