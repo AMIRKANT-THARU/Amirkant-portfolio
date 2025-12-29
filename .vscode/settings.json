@@ -6,5 +6,6 @@
   // Do not show informational messages from the extension
   "liveServer.settings.donotShowInfoMsg": true,
   // Ensure Live Server opens the configured startPath instead of the last opened file
-  "liveServer.settings.useLocalIp": false
+  "liveServer.settings.useLocalIp": false,
+  "liveServer.settings.port": 5501
 }
