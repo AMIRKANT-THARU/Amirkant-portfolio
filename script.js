@@ -14,10 +14,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             const hamburger = document.querySelector('.hamburger');
             if (navLinks.classList.contains('active')) {
                 hamburger.classList.remove('active');
-                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
             }   
         }
     });
+});
+
+document.addEventListener('click', (e) => {
+    if(navLinks.classList.contains('active')){
+        if(!navLinks.contains(e.target) && !hamburger.contains(e.target)){
+            navLinks.classList.remove('active');
+            hamburger.classList.remove('active');
+        }
+    }
 });
 
 // Navbar scroll effect
@@ -33,9 +42,9 @@ window.addEventListener('scroll', () => {
 // Hamburger toggle
 
 const hamburger = document.querySelector('.hamburger');
-const navlinks = document.querySelector('.nav-links');
+const navLinks = document.querySelector('.nav-links');
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
-    navlinks.classList.toggle('active');
+    navLinks.classList.toggle('active');
 });
