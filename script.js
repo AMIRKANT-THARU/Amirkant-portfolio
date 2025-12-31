@@ -7,6 +7,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             target.scrollIntoView({
                 behavior: 'smooth'
             });
+
+            // close mobile menu when link clicked
+
+            const navLinks = document.querySelector('.nav-links');
+            const hamburger = document.querySelector('.hamburger');
+            if (navLinks.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                hamburger.classList.remove('active');
+            }   
         }
     });
 });
@@ -19,4 +28,14 @@ window.addEventListener('scroll', () => {
     } else {
         navbar.style.backgroundColor = 'rgba(10, 10, 10, 0.95)';
     }
+});
+
+// Hamburger toggle
+
+const hamburger = document.querySelector('.hamburger');
+const navlinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navlinks.classList.toggle('active');
 });

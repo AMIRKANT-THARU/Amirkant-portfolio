@@ -78,6 +78,65 @@ body{
     width: 100%;
 }
 
+
+/* Hamburger */
+.hamburger{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: var(--accent);
+    border-radius: 2px;
+    transition: all 0.3s ease ;
+}
+
+/*show hamburger in moblie only*/
+@media (max-width: 768px){
+    .hamburger{
+        display: flex;
+    }
+     
+    .nav-links{
+        display: none;
+    }
+}   
+
+.nav-links.active{
+
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    background: var(--dark-bg);
+    width: 200px;
+    padding: 1rem;
+    height: calc(100vh - 70px);
+    gap: 1.5rem;
+    z-index: 999;
+    
+}
+
+
+.hamburger.active span:nth-child(1){
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2){
+    opacity: 0;
+}   
+
+.hamburger.active span:nth-child(3){
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
 /*hero section*/
 #Home{
     min-height: 100vh;
