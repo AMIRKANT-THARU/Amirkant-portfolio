@@ -20,15 +20,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-document.addEventListener('click', (e) => {
-    if(navLinks.classList.contains('active')){
-        if(!navLinks.contains(e.target) && !hamburger.contains(e.target)){
-            navLinks.classList.remove('active');
-            hamburger.classList.remove('active');
-        }
-    }
-});
-
 // Navbar scroll effect
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
