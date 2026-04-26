@@ -1,7 +1,11 @@
 
 :root{
-    --accent: #1f7cff;
+    --accent: #4400ff;
     --accent-glow: rgba(46,204,113,0.4);
+    --logo-color: #7fcf61;
+    --skill-accent: #f05c7f;
+    --skill-glow: rgba(240,92,127,0.2);
+    --hamburger-color: #ffe600;
     --text: #ffffff;
     --muted: rgba(255,255,255,0.75);
     --bg: #0a0a0a;
@@ -102,7 +106,7 @@ body.light-mode .navbar.scrolled{
 .logo{
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--accent);
+    color: var(--logo-color);
     text-decoration: none;
     position: relative;
     padding-left: 0;
@@ -163,7 +167,7 @@ body.light-mode .navbar.scrolled{
     display: block;
     width: 25px;
     height: 3px;
-    background: var(--accent);
+    background: var(--hamburger-color);
     border-radius: 2px;
     transition: all 0.3s ease ;
 }
@@ -351,13 +355,13 @@ body.light-mode .hero p {
 
 .skill-card:hover{
     transform: translateY(-10px);
-    border-color: var(--accent);
-    box-shadow: 0 10px 30px var(--accent-glow);
+    border-color: var(--skill-accent);
+    box-shadow: 0 10px 30px var(--skill-glow);
 }
 
 .skill-card i{
     font-size: 3rem;
-    color: var(--accent);
+    color: var(--skill-accent);
     margin-bottom: 1rem;
 }
 
