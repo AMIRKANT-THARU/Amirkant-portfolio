@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "Welcome to my personal portfolio website! This is a showcase of my skills, projects, and experience as a DevOps Engineer & Web Developer.",
   "main": "script.js",
-  "scripts": {
-    "start": "live-server",
-    "build": "echo 'No build step needed'"
-  },
+ "scripts": {
+  "start": "live-server",
+  "build": "echo 'No build step needed'"
+},
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AMIRKANT-THARU/Amirkant-portfolio.git"

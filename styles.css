@@ -3,7 +3,7 @@
     --accent: #4400ff;
     --accent-glow: rgba(46,204,113,0.4);
     --logo-color: #7fcf61;
-    --skill-accent: #f05c7f;
+    --skill-accent: #00ff26;
     --skill-glow: rgba(124, 222, 235, 0.257);
     --hamburger-color: #ffffff;
     --text: #ffffff;
@@ -375,6 +375,10 @@ body.light-mode .hero p {
 .skill-card p{
     font-size: 0.95rem;
     color: var(--muted);
+}
+
+.highlight-skill {
+    color: #ffd700; /* Lightning/gold color */
 }
 
 /*projects*/
