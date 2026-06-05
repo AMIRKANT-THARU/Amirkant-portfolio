@@ -3,157 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amir kant Chaudhary portfolio</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome via jsDelivr -->
+    <meta name="description" content="Portfolio of Amir Kant Chaudhary, DevOps Engineer and Web Developer focused on Spring Boot deployments, CI/CD, cloud infrastructure, and reliable web applications.">
+    <title>Amir Kant Chaudhary | DevOps Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--Navigation-->
+    <div class="page-shell">
+        <nav class="navbar">
+            <a href="#Home" class="logo" aria-label="Amir Kant Chaudhary home">
+                <span>AK</span>
+            </a>
 
-    <nav class="navbar">
-        <a href="#Home" class="logo">AKC</a>
+            <div class="nav-actions">
+                <ul class="nav-links">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle theme">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                </button>
+            </div>
 
-        <div class="nav-actions">
-            <ul class="nav-links">
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Project</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle theme">
-                <i class="fas fa-moon"></i>
+            <button class="hamburger" type="button" aria-label="Open navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-        </div>
+        </nav>
 
-        <!--Hamburger -->
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>  
+        <main>
+            <section id="Home" class="hero">
+                <div class="hero-copy reveal">
+                    <span class="eyebrow"><i class="fa-solid fa-terminal" aria-hidden="true"></i> DevOps Engineer and Web Developer</span>
+                    <h1>Production-ready web systems, automated from code to cloud.</h1>
+                    <p class="hero-lead">I am Amir kant Chaudhary, A final-year Computer Engineering student at Nepal Engineering College, Changunarayan, Bhaktapur. I am passionate about the DevOps field and continuously learning technologies such as Docker, Jenkins, Git, Linux, CI/CD, cloud computing, and automation. I enjoy building efficient, scalable, and reliable systems while expanding my knowledge of modern software development and deployment practices.
+</p>
 
-        <!--Hero section-->
-        <section id="Home" class="hero">
-            <div class="hero-content">
-                <h1>DevOps Engineer & Web Developer</h1>
-                <p><span class="intro-name">Hi, I'm Amir Kant Chaudhary,</span> a passionate DevOps Engineer. I specialize in automating infrastructure, streamlining CI/CD pipelines, and deploying scalable applications on the cloud. I love bridging the gap between development and operations to deliver high-quality, reliable software efficiently.</p>
-                <p class="highlight">Specifications in modern web development and cyber system</p>
-                <a href="#contact" class="cta-button">Let's connect</a>
-            </div>
-            <div class="hero-image">
-                <img src="mustang.jpeg" alt="profile" class="profile-image">
-            </div>
-        </section>
+                    <div class="hero-actions">
+                        <a href="#projects" class="cta-button"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> View Work</a>
+                        <a href="#contact" class="secondary-button"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Hire Me</a>
+                    </div>
 
-        <!--Skill section-->
-        <section id="skills" class="skills">
-            <h2>Technical Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fa-solid fa-code"></i>
-                    <h3>Frontend Development</h3>
-                    <p>HTML,CSS,JavaScript</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-solid fa-server"></i>
-                    <h3>Backend Development</h3>
-                    <p class="highlight-skill">Django,python,PostgrsSQL</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-solid fa-paintbrush"></i>
-                    <h3>UI/UX Design</h3>
-                    <p class="highlight-skill">Figma,Adobe XD, prototyping, User Testing</p>
-                </div>
-            </div>
-        </section>
-
-        <!--Project section-->
-        <section id="projects" class="projects">
-            <h2> Build Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img src="hotel.jpg" alt="Project 1">
-                    <div class ="project-content">
-                        <h3>Real Time Management System</h3>
-                        <a href="http://127.0.0.1:8000/" target="_blank">View projects</a>
+                    <div class="hero-metrics" aria-label="Professional highlights">
+                        <div>
+                            <strong>CI/CD</strong>
+                            <span>Automated release flows</span>
+                        </div>
+                        <div>
+                            <strong>Spring Boot</strong>
+                            <span>Backend APIs and deployment</span>
+                        </div>
+                        <div>
+                            <strong>Cloud</strong>
+                            <span>Docker, Linux, hosting</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!--Contact section-->
-        <section id="contact" class="contact-section">
-            <div class="section-heading">
-                <span>Get in Touch</span>
-                <h2>Let’s build something amazing together</h2>
-                <p>Got an idea, opportunity, or question? Reach out — I’d love to hear from you.</p>
-            </div>
+                <div class="hero-showcase reveal" style="--delay: 120ms">
+                    <div class="portrait-frame">
+                        <img src="mustang.jpeg" alt="Amir Kant Chaudhary" class="profile-image">
+                        <div class="availability-card">
+                            <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                            <div>
+                                <strong>Available for projects</strong>
+                                <span>DevOps, backend, and web delivery</span>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="contact-grid">
-                <div class="contact-panel">
-                    <div class="contact-panel-inner">
+                    <div class="pipeline-card" aria-label="Animated DevOps workflow">
+                        <div class="pipeline-header">
+                            <span class="window-dot red"></span>
+                            <span class="window-dot yellow"></span>
+                            <span class="window-dot green"></span>
+                            <strong>deploy.yml</strong>
+                        </div>
+                        <div class="pipeline-flow">
+                            <div class="pipeline-step active">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                <span>Code</span>
+                            </div>
+                            <div class="pipeline-line"></div>
+                            <div class="pipeline-step">
+                                <i class="fa-solid fa-vial-circle-check" aria-hidden="true"></i>
+                                <span>Test</span>
+                            </div>
+                            <div class="pipeline-line"></div>
+                            <div class="pipeline-step">
+                                <i class="fa-brands fa-docker" aria-hidden="true"></i>
+                                <span>Build</span>
+                            </div>
+                            <div class="pipeline-line"></div>
+                            <div class="pipeline-step">
+                                <i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i>
+                                <span>Deploy</span>
+                            </div>
+                        </div>
+                        <div class="terminal-lines" aria-hidden="true">
+                            <span>$ docker build -t portfolio-api .</span>
+                            <span>$ github actions: checks passed</span>
+                            <span>$ deploy target: production ready</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="skills section-shell">
+                <div class="section-heading reveal">
+                    <span>Technical Expertise</span>
+                    <h2>A balanced skillset for building, shipping, and maintaining products.</h2>
+                    <p>My work connects clean development with deployment discipline: readable code, secure configuration, repeatable builds, and practical production workflows.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card reveal" style="--delay: 0ms">
+                        <i class="fa-solid fa-code" aria-hidden="true"></i>
+                        <h3>Frontend Development</h3>
+                        <p>Responsive interfaces with HTML, CSS, JavaScript, accessibility, and polished portfolio or business pages.</p>
+                    </article>
+                    <article class="skill-card reveal" style="--delay: 80ms">
+                        <i class="fa-solid fa-server" aria-hidden="true"></i>
+                        <h3>Backend Engineering</h3>
+                        <p>Spring Boot, Django, Python, REST APIs, PostgreSQL, authentication, and structured API design.</p>
+                    </article>
+                    <article class="skill-card reveal" style="--delay: 160ms">
+                        <i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i>
+                        <h3>DevOps Delivery</h3>
+                        <p>CI/CD pipelines, Docker, Linux servers, GitHub Actions, deployment setup, and release automation.</p>
+                    </article>
+                    <article class="skill-card reveal" style="--delay: 240ms">
+                        <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                        <h3>Reliability</h3>
+                        <p>Environment management, debugging, deployment checks, secure settings, and production-minded documentation.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="projects" class="projects section-shell">
+                <div class="section-heading reveal">
+                    <span>Selected Work</span>
+                    <h2>Projects with a delivery mindset.</h2>
+                    <p>These projects show practical development ability and the DevOps thinking needed to ship systems that are easy to run.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card featured-project reveal">
+                        <div class="project-top">
+                            <div class="project-icon">
+                                <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+                            </div>
+                            <span class="project-label">Featured DevOps Project</span>
+                        </div>
+                        <h3>Spring Boot End-to-End DevOps Pipeline</h3>
+                        <p>A complete delivery workflow for a Spring Boot application, covering source control, build automation, Docker packaging, CI/CD execution, deployment preparation, and production-focused configuration.</p>
+                        <ul class="project-points">
+                            <li>Automated build and test flow for dependable releases</li>
+                            <li>Containerized service for consistent deployment environments</li>
+                            <li>Designed around environment variables and repeatable delivery</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Spring Boot</span>
+                            <span>Docker</span>
+                            <span>CI/CD</span>
+                            <span>Linux</span>
+                            <span>GitHub Actions</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card image-project reveal" style="--delay: 120ms">
+                        <img src="hotel.jpg" alt="Hotel management dashboard preview">
+                        <div class="project-content">
+                            <span class="project-label">Web Application</span>
+                            <h3>Real-Time Management System</h3>
+                            <p>A management system concept focused on structured operations, clear user workflows, and responsive web presentation.</p>
+                            <a href="https://github.com/AMIRKANT-THARU/RTMS" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                View GitHub
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="contact-section section-shell">
+                <div class="section-heading reveal">
+                    <span>Get in Touch</span>
+                    <h2>Let us build something reliable together.</h2>
+                    <p>For opportunities, collaboration, or project discussion, send a message and I will respond as soon as possible.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <aside class="contact-panel reveal">
                         <h3>Contact Info</h3>
                         <ul class="contact-details">
                             <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                <strong>Email:</strong>
-                                <span>amirkant004@gmail.com</span>
+                                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                                <div>
+                                    <strong>Email</strong>
+                                    <a href="mailto:amirkant004@gmail.com">amirkant004@gmail.com</a>
+                                </div>
                             </li>
                             <li>
-                                <i class="fa-solid fa-phone"></i>
-                                <strong>Phone:</strong>
-                                <span>+977-9744338664</span>
+                                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                                <div>
+                                    <strong>Phone</strong>
+                                    <a href="tel:+9779744338664">+977-9744338664</a>
+                                </div>
                             </li>
                             <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                <strong>Location:</strong>
-                                <span>Kathmandu, Nepal</span>
+                                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                <div>
+                                    <strong>Location</strong>
+                                    <span>Kathmandu, Nepal</span>
+                                </div>
                             </li>
                         </ul>
+                    </aside>
 
-                    </div>
-                    <div class="contact-panel-glow"></div>
+                    <form class="contact-form reveal" style="--delay: 120ms" action="https://formsubmit.co/amirkant004@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New message from portfolio visitor">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://amirkant-tharu.github.io/Amirkant-portfolio/#contact">
+                        <input type="hidden" name="_autoresponse" value="Thank you for your message! I will get back to you as soon as possible.">
+                        <div class="form-row">
+                            <label for="name">Name*</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" placeholder="Your email" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="subject">Subject*</label>
+                            <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="message">Message*</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="contact-button">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                            Send Message
+                        </button>
+                    </form>
                 </div>
+            </section>
+        </main>
 
-                <form class="contact-form" action="https://formsubmit.co/amirkant004@gmail.com" method="POST">
-                    <input type="hidden" name="_subject" value="New message from portfolio visitor">
-                    <input type="hidden" name="_captcha" value="false">
-                    <div class="form-row">
-                        <label for="name">Name*</label>
-                        <input type="text" id="name" name="name" placeholder="Your name" required>
-                    </div>
-                    <div class="form-row">
-                        <label for="email">Email*</label>
-                        <input type="email" id="email" name="email" placeholder="Your email" required>
-                    </div>
-                    <div class="form-row">
-                        <label for="subject">Subject*</label>
-                        <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
-                    </div>
-                    <div class="form-row">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="6" placeholder="Tell me more..." required></textarea>
-                    </div>
-                    <button type="submit" class="contact-button">Send Message</button>
-                </form>
-            </div>
-        </section>
-
-        <!--Footer-->
         <footer>
-            <p>&copy; 2026 Chaudhary. All rights reserved.</p>
+            <p>&copy; 2026 Amir Kant Chaudhary. All rights reserved.</p>
             <div class="social-links">
-                <a href="https://github.com/AMIRKANT-THARU" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/aidan_tharu2020/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/amirakanta.caudhari" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-
+                <a href="https://github.com/AMIRKANT-THARU" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/aidan_tharu2020/" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/amirakanta.caudhari" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
             </div>
         </footer>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
