@@ -1,272 +1,794 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Amir Kant Chaudhary, DevOps Engineer and Web Developer focused on Spring Boot deployments, CI/CD, cloud infrastructure, and reliable web applications.">
-    <title>Amir Kant Chaudhary | DevOps Engineer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amir kant Chaudhary | Computer Engineer &amp; Aspiring DevOps Engineer</title>
+<meta name="description" content="Portfolio of Amir kant Chaudhary, a Computer Engineering student from Nepal Engineering College focused on DevOps, networking, cybersecurity, full-stack development, Docker, CI/CD and cloud technologies.">
+<meta name="keywords" content="Amir kant Chaudhary, DevOps Engineer, Computer Engineering, Nepal Engineering College, Full Stack Developer, Networking, NREN, Texis Institute, Docker, Jenkins, CI/CD">
+<meta name="author" content="Amir kant Chaudhary">
+
+<meta property="og:title" content="Amir kant Chaudhary | Computer Engineer &amp; Aspiring DevOps Engineer">
+<meta property="og:description" content="Building, automating, securing, deploying and connecting modern digital systems.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="pp.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="page-shell">
-        <nav class="navbar">
-            <a href="#Home" class="logo" aria-label="Amir Kant Chaudhary home">
-                <span>AK</span>
-            </a>
 
-            <div class="nav-actions">
-                <ul class="nav-links">
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle theme">
-                    <i class="fas fa-moon" aria-hidden="true"></i>
-                </button>
-            </div>
+<div class="welcome-intro" aria-hidden="true">
+  <div class="welcome-mark">&lt;AC /&gt;</div>
+  <p>Code. Create. Connect.</p>
+  <span class="welcome-line"></span>
+</div>
+<div class="floating-tech" aria-hidden="true">
+  <span class="tech-symbol tech-js">JS</span>
+  <span class="tech-symbol tech-html"><svg viewBox="0 0 64 72" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 4h52l-5 55-21 8-21-8Z"/><path d="M45 20H20l2 13h21l-2 16-9 3-10-3"/></svg><small>HTML</small></span>
+  <span class="tech-symbol tech-css"><svg viewBox="0 0 64 72" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 4h52l-5 55-21 8-21-8Z"/><path d="M19 20h27l-2 13H24m20 0-3 16-9 3-10-3"/></svg><small>CSS</small></span>
+  <span class="tech-symbol tech-devops"><svg viewBox="0 0 100 50" fill="none" stroke="currentColor" stroke-width="5"><path d="M50 25C25-15 0 0 5 25s25 40 45 0S95-15 95 25 70 65 50 25Z"/></svg><small>DevOps</small></span>
+  <span class="tech-symbol tech-github"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55v-2.1c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.28 1.2-3.09-.12-.29-.52-1.47.11-3.06 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 5.83 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.59.23 2.77.11 3.06.75.81 1.2 1.83 1.2 3.09 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.02C23.5 5.66 18.35.5 12 .5Z"/></svg></span>
+</div>
 
-            <button class="hamburger" type="button" aria-label="Open navigation" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </nav>
+<div class="grid-overlay" aria-hidden="true"></div>
+<div class="glow glow-a" aria-hidden="true"></div>
+<div class="glow glow-b" aria-hidden="true"></div>
 
-        <main>
-            <section id="Home" class="hero">
-                <div class="hero-copy reveal">
-                    <span class="eyebrow"><i class="fa-solid fa-terminal" aria-hidden="true"></i> DevOps Engineer and Web Developer</span>
-                    <h1>Production-ready web systems, automated from code to cloud.</h1>
-                    <p class="hero-lead">I am Amir kant Chaudhary, A final-year Computer Engineering student at Nepal Engineering College, Changunarayan, Bhaktapur. I am passionate about the DevOps field and continuously learning technologies such as Docker, Jenkins, Git, Linux, CI/CD, cloud computing, and automation. I enjoy building efficient, scalable, and reliable systems while expanding my knowledge of modern software development and deployment practices.
-</p>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
-                    <div class="hero-actions">
-                        <a href="#projects" class="cta-button"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> View Work</a>
-                        <a href="#contact" class="secondary-button"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Hire Me</a>
-                    </div>
+<a class="skip-link" href="#main">Skip to content</a>
 
-                    <div class="hero-metrics" aria-label="Professional highlights">
-                        <div>
-                            <strong>CI/CD</strong>
-                            <span>Automated release flows</span>
-                        </div>
-                        <div>
-                            <strong>Spring Boot</strong>
-                            <span>Backend APIs and deployment</span>
-                        </div>
-                        <div>
-                            <strong>Cloud</strong>
-                            <span>Docker, Linux, hosting</span>
-                        </div>
-                    </div>
-                </div>
+<!-- ============== NAVBAR ============== -->
+<header class="navbar" id="navbar">
+  <nav class="nav-inner" aria-label="Primary">
+    <a href="#home" class="logo" aria-label="Amir kant Chaudhary, home">
+      <span class="logo-bracket">&lt;</span>AC<span class="logo-bracket">/&gt;</span>
+    </a>
 
-                <div class="hero-showcase reveal" style="--delay: 120ms">
-                    <div class="portrait-frame">
-                        <img src="mustang.jpeg" alt="Amir Kant Chaudhary" class="profile-image">
-                        <div class="availability-card">
-                            <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
-                            <div>
-                                <strong>Available for projects</strong>
-                                <span>DevOps, backend, and web delivery</span>
-                            </div>
-                        </div>
-                    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active" data-nav>Home</a></li>
+      <li><a href="#about" class="nav-link" data-nav>About</a></li>
+      <li><a href="#skills" class="nav-link" data-nav>Skills</a></li>
+      <li><a href="#experience" class="nav-link" data-nav>Experience</a></li>
+      <li><a href="#projects" class="nav-link" data-nav>Projects</a></li>
+      <li><a href="#devops" class="nav-link" data-nav>DevOps Journey</a></li>
+      <li><a href="#education" class="nav-link" data-nav>Education</a></li>
+      <li><a href="#contact" class="nav-link" data-nav>Contact</a></li>
+    </ul>
 
-                    <div class="pipeline-card" aria-label="Animated DevOps workflow">
-                        <div class="pipeline-header">
-                            <span class="window-dot red"></span>
-                            <span class="window-dot yellow"></span>
-                            <span class="window-dot green"></span>
-                            <strong>deploy.yml</strong>
-                        </div>
-                        <div class="pipeline-flow">
-                            <div class="pipeline-step active">
-                                <i class="fa-brands fa-github" aria-hidden="true"></i>
-                                <span>Code</span>
-                            </div>
-                            <div class="pipeline-line"></div>
-                            <div class="pipeline-step">
-                                <i class="fa-solid fa-vial-circle-check" aria-hidden="true"></i>
-                                <span>Test</span>
-                            </div>
-                            <div class="pipeline-line"></div>
-                            <div class="pipeline-step">
-                                <i class="fa-brands fa-docker" aria-hidden="true"></i>
-                                <span>Build</span>
-                            </div>
-                            <div class="pipeline-line"></div>
-                            <div class="pipeline-step">
-                                <i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i>
-                                <span>Deploy</span>
-                            </div>
-                        </div>
-                        <div class="terminal-lines" aria-hidden="true">
-                            <span>$ docker build -t portfolio-api .</span>
-                            <span>$ github actions: checks passed</span>
-                            <span>$ deploy target: production ready</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light and dark theme" aria-pressed="false">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
 
-            <section id="skills" class="skills section-shell">
-                <div class="section-heading reveal">
-                    <span>Technical Expertise</span>
-                    <h2>A balanced skillset for building, shipping, and maintaining products.</h2>
-                    <p>My work connects clean development with deployment discipline: readable code, secure configuration, repeatable builds, and practical production workflows.</p>
-                </div>
+<main id="main" tabindex="-1">
 
-                <div class="skills-grid">
-                    <article class="skill-card reveal" style="--delay: 0ms">
-                        <i class="fa-solid fa-code" aria-hidden="true"></i>
-                        <h3>Frontend Development</h3>
-                        <p>Responsive interfaces with HTML, CSS, JavaScript, accessibility, and polished portfolio or business pages.</p>
-                    </article>
-                    <article class="skill-card reveal" style="--delay: 80ms">
-                        <i class="fa-solid fa-server" aria-hidden="true"></i>
-                        <h3>Backend Engineering</h3>
-                        <p>Spring Boot, Django, Python, REST APIs, PostgreSQL, authentication, and structured API design.</p>
-                    </article>
-                    <article class="skill-card reveal" style="--delay: 160ms">
-                        <i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i>
-                        <h3>DevOps Delivery</h3>
-                        <p>CI/CD pipelines, Docker, Linux servers, GitHub Actions, deployment setup, and release automation.</p>
-                    </article>
-                    <article class="skill-card reveal" style="--delay: 240ms">
-                        <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
-                        <h3>Reliability</h3>
-                        <p>Environment management, debugging, deployment checks, secure settings, and production-minded documentation.</p>
-                    </article>
-                </div>
-            </section>
+<!-- ============== HERO ============== -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-text reveal">
+      <div class="status-badge">
+        <span class="status-dot" aria-hidden="true"></span>
+        Open to DevOps / Cloud / Networking Opportunities
+      </div>
 
-            <section id="projects" class="projects section-shell">
-                <div class="section-heading reveal">
-                    <span>Selected Work</span>
-                    <h2>Projects with a delivery mindset.</h2>
-                    <p>These projects show practical development ability and the DevOps thinking needed to ship systems that are easy to run.</p>
-                </div>
+      <h1 class="hero-heading">
+        Hi, I'm <span class="hero-name">Amir kant Chaudhary.</span>
+      </h1>
 
-                <div class="projects-grid">
-                    <article class="project-card featured-project reveal">
-                        <div class="project-top">
-                            <div class="project-icon">
-                                <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
-                            </div>
-                            <span class="project-label">Featured DevOps Project</span>
-                        </div>
-                        <h3>Spring Boot End-to-End DevOps Pipeline</h3>
-                        <p>A complete delivery workflow for a Spring Boot application, covering source control, build automation, Docker packaging, CI/CD execution, deployment preparation, and production-focused configuration.</p>
-                        <ul class="project-points">
-                            <li>Automated build and test flow for dependable releases</li>
-                            <li>Containerized service for consistent deployment environments</li>
-                            <li>Designed around environment variables and repeatable delivery</li>
-                        </ul>
-                        <div class="tech-tags">
-                            <span>Spring Boot</span>
-                            <span>Docker</span>
-                            <span>CI/CD</span>
-                            <span>Linux</span>
-                            <span>GitHub Actions</span>
-                        </div>
-                    </article>
+      <p class="hero-role">
+        <span id="roleText" class="role-text">Computer Engineering Student</span><span class="role-cursor" aria-hidden="true">|</span>
+      </p>
 
-                    <article class="project-card image-project reveal" style="--delay: 120ms">
-                        <img src="hotel.jpg" alt="Hotel management dashboard preview">
-                        <div class="project-content">
-                            <span class="project-label">Web Application</span>
-                            <h3>Real-Time Management System</h3>
-                            <p>A management system concept focused on structured operations, clear user workflows, and responsive web presentation.</p>
-                            <a href="https://github.com/AMIRKANT-THARU/RTMS" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-brands fa-github" aria-hidden="true"></i>
-                                View GitHub
-                            </a>
-                        </div>
-                    </article>
-                </div>
-            </section>
+      <p class="hero-tagline">I build, automate, secure, deploy, and connect modern digital systems.</p>
 
-            <section id="contact" class="contact-section section-shell">
-                <div class="section-heading reveal">
-                    <span>Get in Touch</span>
-                    <h2>Let us build something reliable together.</h2>
-                    <p>For opportunities, collaboration, or project discussion, send a message and I will respond as soon as possible.</p>
-                </div>
+      <p class="hero-description">
+        I'm a Computer Engineering student at Nepal Engineering College, working toward becoming a
+        DevOps / Cloud Engineer. My focus sits at the intersection of full-stack development, networking,
+        cybersecurity, and the automation that ties infrastructure together &mdash; backed by hands-on training
+        at Texis Institute and a networking internship at NREN.
+      </p>
 
-                <div class="contact-grid">
-                    <aside class="contact-panel reveal">
-                        <h3>Contact Info</h3>
-                        <ul class="contact-details">
-                            <li>
-                                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-                                <div>
-                                    <strong>Email</strong>
-                                    <a href="mailto:amirkant004@gmail.com">amirkant004@gmail.com</a>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-phone" aria-hidden="true"></i>
-                                <div>
-                                    <strong>Phone</strong>
-                                    <a href="tel:+9779744338664">+977-9744338664</a>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                                <div>
-                                    <strong>Location</strong>
-                                    <span>Kathmandu, Nepal</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </aside>
+      <p class="hero-location">Based in Kathmandu, Nepal <span aria-hidden="true">🇳🇵</span></p>
 
-                    <form class="contact-form reveal" style="--delay: 120ms" action="https://formsubmit.co/amirkant004@gmail.com" method="POST">
-                        <input type="hidden" name="_subject" value="New message from portfolio visitor">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="https://amirkant-tharu.github.io/Amirkant-portfolio/#contact">
-                        <input type="hidden" name="_autoresponse" value="Thank you for your message! I will get back to you as soon as possible.">
-                        <div class="form-row">
-                            <label for="name">Name*</label>
-                            <input type="text" id="name" name="name" placeholder="Your name" required>
-                        </div>
-                        <div class="form-row">
-                            <label for="email">Email*</label>
-                            <input type="email" id="email" name="email" placeholder="Your email" required>
-                        </div>
-                        <div class="form-row">
-                            <label for="subject">Subject*</label>
-                            <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
-                        </div>
-                        <div class="form-row">
-                            <label for="message">Message*</label>
-                            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
-                        </div>
-                        <button type="submit" class="contact-button">
-                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <p>&copy; 2026 Amir Kant Chaudhary. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://github.com/AMIRKANT-THARU" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/aidan_tharu2020/" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/amirakanta.caudhari" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-            </div>
-        </footer>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary magnetic" data-magnetic>
+          View My Work
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#devops" class="btn btn-ghost magnetic" data-magnetic>Explore My Journey</a>
+        <a href="Amirkant%20Chaudhary%20(Resume).pdf" class="btn btn-ghost magnetic" download data-magnetic>Download Resume</a>
+        <a href="#contact" class="btn btn-text magnetic" data-magnetic>Contact Me →</a>
+      </div>
     </div>
 
-    <script src="script.js"></script>
+    <figure class="hero-portrait reveal" data-reveal-delay="150">
+      <div class="portrait-frame"><img src="1.png" alt="Amir kant Chaudhary" width="1086" height="1448" fetchpriority="high"></div>
+      <figcaption><span class="status-dot" aria-hidden="true"></span> Building with curiosity. Growing with purpose.</figcaption>
+    </figure>
+    <div class="hero-visual reveal" data-reveal-delay="250">
+      <div class="terminal-card" id="tiltCard">
+        <div class="terminal-titlebar">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <span class="terminal-title">amirkant@portfolio &mdash; zsh</span>
+        </div>
+        <div class="terminal-body" id="heroTerminal">
+          <p class="line"><span class="prompt">$</span> whoami</p>
+          <p class="line out">Amir kant Chaudhary</p>
+          <p class="line"><span class="prompt">$</span> role</p>
+          <p class="line out">Aspiring DevOps Engineer</p>
+          <p class="line"><span class="prompt">$</span> education</p>
+          <p class="line out">Computer Engineering @ Nepal Engineering College</p>
+          <p class="line"><span class="prompt">$</span> interests</p>
+          <p class="line out">DevOps &bull; Cloud &bull; Networking &bull; Security &bull; Full Stack</p>
+          <p class="line"><span class="prompt">$</span> status</p>
+          <p class="line out accent">Building. Learning. Automating.</p>
+          <p class="line"><span class="prompt">$</span> <span class="type-cursor" aria-hidden="true">&#9608;</span></p>
+        </div>
+      </div>
+      <div class="profile-chip">
+        <img src="pp.png" alt="Portrait of Amir kant Chaudhary" width="64" height="64">
+        <div>
+          <strong>Amir kant Chaudhary</strong>
+          <span>Computer Engineering Student</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+    <span></span>
+  </a>
+</section>
+
+<!-- ============== ABOUT ============== -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>About Me</h2>
+      <p>The short version of how I got here, and where I'm headed.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-copy glass-card reveal">
+        <p>
+          I'm a Computer Engineering student in my final semester at Nepal Engineering College, with
+          hands-on exposure to networking, web development, Linux systems, and DevOps technologies.
+          Coursework gave me the fundamentals; the internship and training since then are where most of
+          the real learning happened.
+        </p>
+        <p>
+          I completed a networking internship at Nepal Research and Education Network (NREN), gaining
+          practical experience configuring switches and routers, troubleshooting DHCP services, and
+          working directly in professional networking environments. I've also completed DevOps training
+          at Texis Institute, covering Linux fundamentals, Git, Docker, cloud concepts, and CI/CD workflows.
+        </p>
+        <p>
+          I'm familiar with React.js, Django, Node.js, Git, Linux, Docker, CI/CD concepts, and cloud
+          fundamentals &mdash; and I'm most interested in where Network Engineering, DevOps, System
+          Administration, and Cybersecurity meet modern infrastructure.
+        </p>
+      </div>
+
+      <div class="about-stats">
+        <div class="stat-card glass-card reveal" data-reveal-delay="0">
+          <span class="stat-number" data-count="6" data-suffix="+">0</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat-card glass-card reveal" data-reveal-delay="80">
+          <span class="stat-static">Texis Institute</span>
+          <span class="stat-label">DevOps Training Completed</span>
+        </div>
+        <div class="stat-card glass-card reveal" data-reveal-delay="160">
+          <span class="stat-static">NREN</span>
+          <span class="stat-label">Networking Internship</span>
+        </div>
+        <div class="stat-card glass-card reveal" data-reveal-delay="240">
+          <span class="stat-static">Computer Engineering</span>
+          <span class="stat-label">Nepal Engineering College</span>
+        </div>
+        <div class="stat-card glass-card reveal" data-reveal-delay="320">
+          <span class="stat-number" data-count="15" data-suffix="+">0</span>
+          <span class="stat-label">Technologies Explored</span>
+        </div>
+        <div class="stat-card glass-card reveal" data-reveal-delay="400">
+          <span class="stat-static">EN &bull; NE &bull; HI</span>
+          <span class="stat-label">Languages Spoken</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== SKILLS ============== -->
+<section class="section section-alt" id="skills">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Skills &amp; Technologies</h2>
+      <p>Grouped by the layer of the stack they belong to, from interface down to infrastructure.</p>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-group glass-card reveal">
+        <h3>Networking</h3>
+        <div class="tag-row">
+          <span class="tag">TCP/IP Fundamentals</span><span class="tag">IP Addressing</span>
+          <span class="tag">Subnetting</span><span class="tag">Routing &amp; Switching</span>
+          <span class="tag">Network Troubleshooting</span>
+        </div>
+      </div>
+
+      <div class="skill-group glass-card reveal">
+        <h3>Programming</h3>
+        <div class="tag-row">
+          <span class="tag">JavaScript</span><span class="tag">Python Basics</span>
+          <span class="tag">HTML5</span><span class="tag">CSS3</span>
+        </div>
+      </div>
+
+      <div class="skill-group glass-card reveal">
+        <h3>Frontend</h3>
+        <div class="tag-row">
+          <span class="tag">React.js</span><span class="tag">Responsive Web Design</span>
+        </div>
+      </div>
+
+      <div class="skill-group glass-card reveal">
+        <h3>Backend</h3>
+        <div class="tag-row">
+          <span class="tag">Django</span><span class="tag">Node.js</span><span class="tag">Express.js</span>
+        </div>
+      </div>
+
+      <div class="skill-group glass-card reveal">
+        <h3>Databases</h3>
+        <div class="tag-row">
+          <span class="tag">MySQL</span><span class="tag">PostgreSQL</span><span class="tag">MongoDB</span>
+        </div>
+      </div>
+
+      <div class="skill-group glass-card reveal">
+        <h3>DevOps</h3>
+        <div class="tag-row">
+          <span class="tag">Linux</span><span class="tag">Git</span><span class="tag">GitHub</span>
+          <span class="tag">Docker</span><span class="tag">Jenkins Fundamentals</span>
+          <span class="tag">CI/CD Fundamentals</span><span class="tag">AWS Basics</span>
+        </div>
+      </div>
+
+      <div class="skill-group glass-card reveal">
+        <h3>Tools</h3>
+        <div class="tag-row">
+          <span class="tag">VS Code</span><span class="tag">Linux Terminal</span>
+          <span class="tag">GitHub</span><span class="tag">Docker</span>
+        </div>
+      </div>
+
+      <div class="skill-group glass-card reveal">
+        <h3>Areas of Interest</h3>
+        <div class="tag-row">
+          <span class="tag">Network Engineering</span><span class="tag">DevOps</span>
+          <span class="tag">System Administration</span>
+          <span class="tag">Full-Stack Development</span>
+        </div>
+      </div>
+
+      <div class="skill-group glass-card reveal">
+        <h3>Languages</h3>
+        <div class="tag-row">
+          <span class="tag">English</span><span class="tag">Nepali</span><span class="tag">Hindi</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============== EXPERIENCE ============== -->
+<section class="section" id="experience">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Experience</h2>
+      <p>Where I've applied what I've learned outside the classroom.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-node"></div>
+        <div class="timeline-content glass-card">
+          <span class="timeline-period">27 Apr 2026 &ndash; 14 Aug 2026</span>
+          <h3>Networking Intern</h3>
+          <p class="timeline-org">Nepal Research and Education Network (NREN)</p>
+          <ul>
+            <li>Gained practical exposure to networking infrastructure and day-to-day network operations</li>
+            <li>Created and tested network switches using physical devices and Cisco Packet Tracer</li>
+            <li>Applied networking concepts including TCP/IP, IP addressing, subnetting, routing, and switching</li>
+            <li>Configured and troubleshot DHCP services on routers</li>
+            <li>Performed Linux file system navigation, user management, and basic system administration</li>
+            <li>Developed practical understanding of professional networking environments, documentation, and technical workflows</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-node"></div>
+        <div class="timeline-content glass-card">
+          <span class="timeline-period">Completed</span>
+          <h3>DevOps Training</h3>
+          <p class="timeline-org">Texis Institute</p>
+          <ul>
+            <li>Learned Linux fundamentals, Git, Docker, cloud concepts, and CI/CD workflows</li>
+            <li>Practiced DevOps practices across the build-to-deploy lifecycle</li>
+            <li>Practiced containerization using Docker</li>
+            <li>Practiced version control with Git and GitHub</li>
+            <li>Practiced basic deployment workflows</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PROJECTS ============== -->
+<section class="section section-alt" id="projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Projects</h2>
+      <p>A selection of what I've built while learning by doing.</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <article class="project-card glass-card reveal" data-tilt>
+        <div class="project-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4Z"/><path d="M9.5 12l2 2 3.5-4"/></svg>
+        </div>
+        <span class="project-category">Cybersecurity</span>
+        <h3>Hybrid Intrusion Detection System</h3>
+        <p>
+          A cybersecurity-focused intrusion detection project combining rule-based detection with
+          intelligent, ML-oriented detection concepts to flag suspicious activity inside an
+          electronic voting / web environment.
+        </p>
+        <ul class="feature-list">
+          <li>Brute force detection</li>
+          <li>SQL injection detection</li>
+          <li>Duplicate vote detection</li>
+          <li>Rapid request detection</li>
+          <li>Suspicious IP activity detection</li>
+          <li>Admin-based security rules</li>
+          <li>Hybrid rule-based + ML detection approach</li>
+        </ul>
+        <div class="tag-row small">
+          <span class="tag">Python</span><span class="tag">Django</span>
+          <span class="tag">Machine Learning</span><span class="tag">Network Security</span>
+        </div>
+        <div class="project-actions">
+          <a href="https://github.com/AMIRKANT-THARU/Hybrid_IDS/tree/main" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-ghost">
+            GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55v-2.1c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.28 1.2-3.09-.12-.29-.52-1.47.11-3.06 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 5.83 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.59.23 2.77.11 3.06.75.81 1.2 1.83 1.2 3.09 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.02C23.5 5.66 18.35.5 12 .5Z"/></svg>
+          </a>
+          <button type="button" class="btn btn-small btn-text" data-details="ids">View Details</button>
+        </div>
+      </article>
+
+      <article class="project-card glass-card reveal" data-tilt>
+        <div class="project-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V5a2 2 0 0 1 2-2h9l5 5v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><path d="M14 3v5h5M8 13h8M8 17h5"/></svg>
+        </div>
+        <span class="project-category">Frontend</span>
+        <h3>School Management System</h3>
+        <p>
+          A responsive school management website built with reusable frontend components, designed
+          around usability and an organized frontend architecture.
+        </p>
+        <ul class="feature-list">
+          <li>Homepage, facilities, and gallery interfaces</li>
+          <li>Contact and authentication-related functionality</li>
+          <li>Reusable, componentized frontend</li>
+          <li>Focus on responsive design and usability</li>
+        </ul>
+        <div class="tag-row small">
+          <span class="tag">React.js</span><span class="tag">JavaScript</span><span class="tag">HTML</span><span class="tag">CSS</span>
+        </div>
+        <div class="project-actions">
+          <a href="https://github.com/AMIRKANT-THARU" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-ghost">
+            GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55v-2.1c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.28 1.2-3.09-.12-.29-.52-1.47.11-3.06 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 5.83 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.59.23 2.77.11 3.06.75.81 1.2 1.83 1.2 3.09 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.02C23.5 5.66 18.35.5 12 .5Z"/></svg>
+          </a>
+          <button type="button" class="btn btn-small btn-text" data-details="school">View Details</button>
+        </div>
+      </article>
+
+      <article class="project-card glass-card reveal" data-tilt>
+        <div class="project-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M17.5 14v3M17.5 21v-4M14 17.5h7"/></svg>
+        </div>
+        <span class="project-category">Backend &amp; DevOps</span>
+        <h3>Spring Boot Project</h3>
+        <p>A Java web application built with Spring Boot, bringing together backend development, Maven builds, and containerization.</p>
+        <ul class="feature-list">
+          <li>Spring Boot web application using Java 17</li>
+          <li>Maven dependency management and build configuration</li>
+          <li>Dockerfile for container packaging</li>
+          <li>Jenkins pipeline configuration</li>
+        </ul>
+        <div class="tag-row small">
+          <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Maven</span><span class="tag">Docker</span><span class="tag">Jenkins</span>
+        </div>
+        <div class="project-actions">
+          <a href="https://github.com/AMIRKANT-THARU/Spring-boot-project" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-ghost">
+            GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55v-2.1c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.28 1.2-3.09-.12-.29-.52-1.47.11-3.06 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 5.83 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.59.23 2.77.11 3.06.75.81 1.2 1.83 1.2 3.09 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.02C23.5 5.66 18.35.5 12 .5Z"/></svg>
+          </a>
+          <button type="button" class="btn btn-small btn-text" data-details="springboot">View Details</button>
+        </div>
+      </article>
+
+      <article class="project-card glass-card reveal" data-tilt>
+        <div class="project-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        </div>
+        <span class="project-category">Full Stack</span>
+        <h3>RTMS &mdash; Real Time Management System</h3>
+        <p>
+          A web-based management system with real-time data processing and monitoring functionality,
+          built to support efficient information handling and decision-making.
+        </p>
+        <ul class="feature-list">
+          <li>Real-time data processing and monitoring</li>
+          <li>Dashboards and management features</li>
+          <li>Django-based backend architecture and application logic</li>
+        </ul>
+        <div class="tag-row small">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Django</span>
+        </div>
+        <div class="project-actions">
+          <a href="https://github.com/AMIRKANT-THARU" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-ghost">
+            GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55v-2.1c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.28 1.2-3.09-.12-.29-.52-1.47.11-3.06 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 5.83 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.59.23 2.77.11 3.06.75.81 1.2 1.83 1.2 3.09 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.02C23.5 5.66 18.35.5 12 .5Z"/></svg>
+          </a>
+          <button type="button" class="btn btn-small btn-text" data-details="rtms">View Details</button>
+        </div>
+      </article>
+
+      <article class="project-card glass-card reveal" data-tilt>
+        <div class="project-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 8h18M7 6v.01M10 6v.01"/></svg>
+        </div>
+        <span class="project-category">Frontend</span>
+        <h3>Personal Portfolio Website</h3>
+        <p>
+          A responsive portfolio website built to showcase projects, technical skills, and development
+          experience &mdash; the very site you're looking at now.
+        </p>
+        <ul class="feature-list">
+          <li>Optimized for different screen sizes</li>
+          <li>Improved navigation and usability</li>
+          <li>Built with plain HTML, CSS, and JavaScript</li>
+        </ul>
+        <div class="tag-row small">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+        </div>
+        <div class="project-actions">
+          <a href="https://github.com/AMIRKANT-THARU" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-ghost">
+            GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55v-2.1c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.28 1.2-3.09-.12-.29-.52-1.47.11-3.06 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 5.83 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.59.23 2.77.11 3.06.75.81 1.2 1.83 1.2 3.09 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.02C23.5 5.66 18.35.5 12 .5Z"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card glass-card reveal" data-tilt>
+        <div class="project-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M17.5 14v3M17.5 21v-4M14 17.5h7"/></svg>
+        </div>
+        <span class="project-category">Full Stack &amp; DevOps</span>
+        <h3>DevOps Full Stack Project</h3>
+        <p>A full-stack project combining a React frontend and a separate backend with Docker Compose configuration for running the application services.</p>
+        <ul class="feature-list">
+          <li>React frontend with Vite tooling</li>
+          <li>Separate frontend and backend codebases</li>
+          <li>Docker Compose service configuration</li>
+          <li>Version-controlled application and deployment files</li>
+        </ul>
+        <div class="tag-row small">
+          <span class="tag">React</span><span class="tag">Vite</span><span class="tag">Docker Compose</span><span class="tag">Git</span>
+        </div>
+        <div class="project-actions">
+          <a href="https://github.com/AMIRKANT-THARU/Devops-fullstack" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-ghost">
+            GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55v-2.1c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.28 1.2-3.09-.12-.29-.52-1.47.11-3.06 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 5.83 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.59.23 2.77.11 3.06.75.81 1.2 1.83 1.2 3.09 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.02C23.5 5.66 18.35.5 12 .5Z"/></svg>
+          </a>
+          <button type="button" class="btn btn-small btn-text" data-details="devopsfullstack">View Details</button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Project details dialog -->
+<div class="modal-backdrop" id="modalBackdrop" hidden>
+  <div class="modal glass-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle" id="modal">
+    <button class="modal-close" id="modalClose" type="button" aria-label="Close details">&times;</button>
+    <h3 id="modalTitle"></h3>
+    <p id="modalBody"></p>
+  </div>
+</div>
+
+<!-- ============== DEVOPS JOURNEY ============== -->
+<section class="section" id="devops">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>My DevOps Journey</h2>
+      <p>How software moves from source code to production &mdash; and what I'm learning at each stage.</p>
+    </div>
+
+    <div class="pipeline reveal" role="list" aria-label="DevOps pipeline stages">
+      <div class="pipeline-stage" role="listitem"><span>Code</span></div>
+      <div class="pipeline-connector" aria-hidden="true"></div>
+      <div class="pipeline-stage" role="listitem"><span>Git</span></div>
+      <div class="pipeline-connector" aria-hidden="true"></div>
+      <div class="pipeline-stage" role="listitem"><span>GitHub</span></div>
+      <div class="pipeline-connector" aria-hidden="true"></div>
+      <div class="pipeline-stage" role="listitem"><span>Build</span></div>
+      <div class="pipeline-connector" aria-hidden="true"></div>
+      <div class="pipeline-stage" role="listitem"><span>Test</span></div>
+      <div class="pipeline-connector" aria-hidden="true"></div>
+      <div class="pipeline-stage" role="listitem"><span>Docker</span></div>
+      <div class="pipeline-connector" aria-hidden="true"></div>
+      <div class="pipeline-stage" role="listitem"><span>CI/CD</span></div>
+      <div class="pipeline-connector" aria-hidden="true"></div>
+      <div class="pipeline-stage" role="listitem"><span>Deploy</span></div>
+      <div class="pipeline-connector" aria-hidden="true"></div>
+      <div class="pipeline-stage pipeline-final" role="listitem"><span>Monitor</span></div>
+    </div>
+
+    <p class="pipeline-caption reveal">
+      This is the loop I'm training on: writing code, versioning it, building and testing it
+      automatically, checking quality, packaging it into containers, shipping it through CI/CD, and
+      watching it run.
+    </p>
+
+    <div class="node-cloud reveal" aria-label="Technologies used across the pipeline">
+      <span class="node-chip">Git</span><span class="node-chip">GitHub</span><span class="node-chip">Maven</span>
+      <span class="node-chip">npm</span><span class="node-chip">Node.js</span><span class="node-chip">React</span>
+      <span class="node-chip">Docker</span><span class="node-chip">Docker Compose</span><span class="node-chip">Jenkins</span>
+      <span class="node-chip">GitHub Actions</span><span class="node-chip">Linux</span>
+      <span class="node-chip">PostgreSQL</span><span class="node-chip">SSH</span><span class="node-chip">Nginx</span>
+      <span class="node-chip">Cloud</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============== EDUCATION ============== -->
+<section class="section section-alt" id="education">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Education &amp; Training</h2>
+      <p>The formal and hands-on learning behind everything above.</p>
+    </div>
+
+    <div class="edu-grid">
+      <div class="edu-card glass-card reveal">
+        <div class="edu-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 9l10-5 10 5-10 5-10-5Z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg>
+        </div>
+        <span class="edu-period">Final Semester</span>
+        <h3>Bachelor in Computer Engineering</h3>
+        <p class="edu-org">Nepal Engineering College, Changunarayan, Bhaktapur, Nepal</p>
+        <div class="tag-row small">
+          <span class="tag">Computer Networks</span><span class="tag">Operating Systems</span>
+          <span class="tag">Database Management Systems</span><span class="tag">Software Engineering</span>
+          <span class="tag">Cloud Computing</span><span class="tag">Web Development</span>
+          <span class="tag">Data Science</span><span class="tag">AI &amp; Machine Learning</span>
+        </div>
+      </div>
+
+      <div class="edu-card glass-card reveal">
+        <div class="edu-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 4v5"/></svg>
+        </div>
+        <span class="edu-period">Completed</span>
+        <h3>DevOps Training</h3>
+        <p class="edu-org">Texis Institute</p>
+        <div class="tag-row small">
+          <span class="tag">Linux Fundamentals</span><span class="tag">Git</span><span class="tag">Docker</span>
+          <span class="tag">Cloud Concepts</span><span class="tag">CI/CD Workflows</span>
+        </div>
+      </div>
+
+      <div class="edu-card glass-card reveal">
+        <div class="edu-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6" cy="6" r="2.2"/><circle cx="18" cy="6" r="2.2"/><circle cx="12" cy="18" r="2.2"/><path d="M7.7 7.3 10.5 16M16.3 7.3 13.5 16M8.2 6h7.6"/></svg>
+        </div>
+        <span class="edu-period">Apr &ndash; Aug 2026</span>
+        <h3>Networking Internship</h3>
+        <p class="edu-org">Nepal Research and Education Network (NREN)</p>
+        <div class="tag-row small">
+          <span class="tag">Routing</span><span class="tag">Switching</span><span class="tag">Network Infrastructure</span>
+          <span class="tag">Troubleshooting</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============== LEARNING ROADMAP ============== -->
+    <div class="section-head reveal roadmap-head">
+      <h2>What I'm Learning Next</h2>
+      <p>Current learning goals &mdash; not claims of expertise, just the direction I'm heading.</p>
+    </div>
+
+    <div class="roadmap reveal">
+      <div class="roadmap-track" aria-hidden="true"></div>
+      <div class="roadmap-item"><span class="roadmap-dot"></span><span>Advanced Docker</span></div>
+      <div class="roadmap-item"><span class="roadmap-dot"></span><span>CI/CD at scale</span></div>
+      <div class="roadmap-item"><span class="roadmap-dot"></span><span>Cloud Computing</span></div>
+      <div class="roadmap-item"><span class="roadmap-dot"></span><span>AWS</span></div>
+      <div class="roadmap-item"><span class="roadmap-dot"></span><span>Kubernetes</span></div>
+      <div class="roadmap-item"><span class="roadmap-dot"></span><span>Infrastructure as Code</span></div>
+      <div class="roadmap-item"><span class="roadmap-dot"></span><span>Terraform</span></div>
+      <div class="roadmap-item"><span class="roadmap-dot"></span><span>Monitoring</span></div>
+      <div class="roadmap-item"><span class="roadmap-dot"></span><span>Prometheus</span></div>
+      <div class="roadmap-item"><span class="roadmap-dot"></span><span>Grafana</span></div>
+      <div class="roadmap-item"><span class="roadmap-dot"></span><span>Linux Administration</span></div>
+      <div class="roadmap-item"><span class="roadmap-dot"></span><span>System Design</span></div>
+      <div class="roadmap-item"><span class="roadmap-dot"></span><span>Network Automation</span></div>
+      <div class="roadmap-item"><span class="roadmap-dot"></span><span>DevSecOps</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== TERMINAL SECTION ============== -->
+<section class="section" id="terminal-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Try the Terminal</h2>
+      <p>Type <strong>help</strong> and press Enter to discover the available commands.</p>
+    </div>
+
+    <div class="terminal-card interactive-terminal reveal" id="interactiveTerminalWrap">
+      <div class="terminal-titlebar">
+        <span class="dot dot-red"></span>
+        <span class="dot dot-yellow"></span>
+        <span class="dot dot-green"></span>
+        <span class="terminal-title">visitor@portfolio &mdash; interactive</span>
+      </div>
+      <div class="terminal-body interactive-body" id="terminalOutput" tabindex="0" aria-live="polite">
+        <p class="line out">Click here or the input below, type <strong>help</strong>, and press Enter to see available commands.</p>
+      </div>
+      <form class="terminal-input-row" id="terminalForm">
+        <label class="prompt" for="terminalInput">visitor@portfolio:~$</label>
+        <input type="text" id="terminalInput" class="terminal-input" aria-label="Terminal command input" placeholder="Type help here…" autocomplete="off" autocapitalize="none" spellcheck="false" enterkeyhint="send">
+        <button type="submit" class="terminal-run">Run</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============== CONTACT ============== -->
+<section class="section section-alt" id="contact">
+  <div class="container">
+    <div class="contact-panel glass-card reveal">
+      <div class="contact-left">
+        <h2>Let's Build Something Meaningful.</h2>
+        <p>
+          I'm interested in DevOps, cloud infrastructure, networking, automation, backend development,
+          and opportunities where I can keep learning and solving real problems.
+        </p>
+
+        <div class="contact-cards">
+          <a class="contact-card" href="mailto:amirkant004@gmail.com">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
+            amirkant004@gmail.com
+          </a>
+          <a class="contact-card" href="tel:+9779744338664">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.2 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .6 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.5 2.9.6a2 2 0 0 1 1.7 2.1Z"/></svg>
+            +977-9744338664
+          </a>
+          <a class="contact-card" href="https://github.com/AMIRKANT-THARU" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55v-2.1c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.28 1.2-3.09-.12-.29-.52-1.47.11-3.06 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 5.83 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.59.23 2.77.11 3.06.75.81 1.2 1.83 1.2 3.09 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.02C23.5 5.66 18.35.5 12 .5Z"/></svg>
+            github.com/AMIRKANT-THARU
+          </a>
+          <a class="contact-card" href="https://www.linkedin.com/in/amirkant-chaudhary-792a4133a/" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM2.98 9h4v12h-4V9Zm7 0h3.8v1.7h.05c.53-1 1.83-2 3.76-2 4.02 0 4.76 2.6 4.76 6V21h-4v-5.8c0-1.4-.02-3.2-1.95-3.2-1.96 0-2.26 1.5-2.26 3.1V21h-4V9Z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+
+        <div class="social-row">
+          <a href="https://github.com/AMIRKANT-THARU" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" class="social-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55v-2.1c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.28 1.2-3.09-.12-.29-.52-1.47.11-3.06 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 5.83 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.59.23 2.77.11 3.06.75.81 1.2 1.83 1.2 3.09 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.02C23.5 5.66 18.35.5 12 .5Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/amirkant-chaudhary-792a4133a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" class="social-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM2.98 9h4v12h-4V9Zm7 0h3.8v1.7h.05c.53-1 1.83-2 3.76-2 4.02 0 4.76 2.6 4.76 6V21h-4v-5.8c0-1.4-.02-3.2-1.95-3.2-1.96 0-2.26 1.5-2.26 3.1V21h-4V9Z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/aidan_tharu2020/" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile" class="social-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          </a>
+          <a href="https://www.facebook.com/amirakanta.caudhari" target="_blank" rel="noopener noreferrer" aria-label="Facebook profile" class="social-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.9.26-1.6 1.6-1.6h1.7V4.2C16.5 4.1 15.5 4 14.4 4c-2.5 0-4.2 1.5-4.2 4.3v2.5H7.5v3.2h2.7v8h3.3Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="cf-name">Name</label>
+          <input type="text" id="cf-name" name="name" aria-describedby="err-name" required autocomplete="name">
+          <span class="form-error" id="err-name"></span>
+        </div>
+        <div class="form-row">
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" name="email" aria-describedby="err-email" required autocomplete="email">
+          <span class="form-error" id="err-email"></span>
+        </div>
+        <div class="form-row">
+          <label for="cf-subject">Subject</label>
+          <input type="text" id="cf-subject" name="subject" aria-describedby="err-subject" required>
+          <span class="form-error" id="err-subject"></span>
+        </div>
+        <div class="form-row">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" aria-describedby="err-message" rows="4" required></textarea>
+          <span class="form-error" id="err-message"></span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full magnetic" data-magnetic>Open Email Draft</button>
+        <p>Your email app opens with your draft. Send it there to deliver your message, or email amirkant004@gmail.com directly.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- ============== FOOTER ============== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <p class="footer-title">Designed &amp; Built by Amirkant Chaudhary</p>
+      <p class="footer-sub">Computer Engineering &bull; DevOps &bull; Networking &bull; Full Stack</p>
+    </div>
+
+    <div class="footer-socials">
+      <a href="https://github.com/AMIRKANT-THARU" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55v-2.1c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.28 1.2-3.09-.12-.29-.52-1.47.11-3.06 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 5.83 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.59.23 2.77.11 3.06.75.81 1.2 1.83 1.2 3.09 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.02C23.5 5.66 18.35.5 12 .5Z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/amirkant-chaudhary-792a4133a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM2.98 9h4v12h-4V9Zm7 0h3.8v1.7h.05c.53-1 1.83-2 3.76-2 4.02 0 4.76 2.6 4.76 6V21h-4v-5.8c0-1.4-.02-3.2-1.95-3.2-1.96 0-2.26 1.5-2.26 3.1V21h-4V9Z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/aidan_tharu2020/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+      </a>
+      <a href="https://www.facebook.com/amirakanta.caudhari" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.9.26-1.6 1.6-1.6h1.7V4.2C16.5 4.1 15.5 4 14.4 4c-2.5 0-4.2 1.5-4.2 4.3v2.5H7.5v3.2h2.7v8h3.3Z"/></svg>
+      </a>
+    </div>
+
+    <p class="footer-copy">&copy; <span id="footerYear"></span> Amirkant Chaudhary. All rights reserved.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="script.js"></script>
 </body>
 </html>

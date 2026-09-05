@@ -38,7 +38,10 @@ Hi, I'm **Amir Kant Chaudhary**, a passionate DevOps Engineer. I specialize in:
 Amirkant-portfolio/
 ├── index.html          # Main HTML file
 ├── styles.css          # Styling
-├── image.jpeg          # Profile image
+├── script.js           # Interactive features
+├── 1.png               # Hero portrait
+├── pp.png              # Profile image
+├── package.json        # Local server and validation commands
 ├── README.md           # This file
 └── .git/               # Git repository
 ```
@@ -70,9 +73,21 @@ Amirkant-portfolio/
    cd Amirkant-portfolio
    ```
 
-3. **Open in browser:**
-   - Simply open `index.html` in your web browser
-   - Or use a local server like Live Server in VS Code
+3. **Install dependencies and run locally:**
+   ```bash
+   npm install
+   npm start
+   ```
+   Open http://127.0.0.1:4173. If the port is occupied, Live Server chooses an available port.
+
+4. **Check JavaScript syntax:**
+   ```bash
+   npm run check
+   npm run build
+   ```
+   This is a static site; the build command validates JavaScript without generating a bundle.
+
+The contact form opens a draft in your email app. You must send it from that app; the site has no email backend.
 
 ## 🌐 Deploy to GitHub Pages
 
@@ -97,7 +112,7 @@ Edit the CSS variables in `styles.css`:
 
 ### Update Content
 - Edit text in `index.html`
-- Replace `image.jpeg` with your profile photo
+- Replace `1.png` and `pp.png` with your profile photo
 - Update social media links
 
 ### Modify Styling
@@ -106,9 +121,10 @@ Edit the CSS variables in `styles.css`:
 
 ## 📦 Dependencies
 
-- **Google Fonts**: Poppins font (loaded via CDN)
-- **FontAwesome**: Icons for social media (v6.5.2)
-- No npm packages required - Pure HTML, CSS & JavaScript
+- **Google Fonts**: Sora, Inter, and IBM Plex Mono (with local fallback fonts)
+- **Icons**: Inline SVG
+- **Development server**: live-server
+- **Runtime**: Pure HTML, CSS & JavaScript
 
 ## 📜 License
 
