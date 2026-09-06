@@ -87,7 +87,15 @@ Amirkant-portfolio/
    ```
    This is a static site; the build command validates JavaScript without generating a bundle.
 
-The contact form opens a draft in your email app. You must send it from that app; the site has no email backend.
+The contact form sends messages to **amirkantchy383@gmail.com** through [FormSubmit](https://formsubmit.co/), which supports this static GitHub Pages site without Gmail credentials in the code. JavaScript submits the form in place with validation, a sending state, and success/error feedback. Failed requests preserve the message. Without JavaScript, the form uses FormSubmit’s standard submission page.
+
+### Activate contact email delivery
+
+1. Open the deployed portfolio and submit the contact form once.
+2. Check **amirkantchy383@gmail.com**, including Spam, for FormSubmit’s activation email and confirm the address.
+3. Submit another message and verify it arrives in the inbox. Activation and actual inbox delivery must be checked by the mailbox owner.
+
+Form submissions (name, email, subject, and message) are processed by FormSubmit. The form includes a honeypot spam field. Service availability and filtering affect delivery; a successful HTTP submission confirms acceptance, not inbox receipt.
 
 ## 🌐 Deploy to GitHub Pages
 

@@ -358,7 +358,7 @@
     projects: 'Projects: Hybrid Intrusion Detection Method, RTMS - Real Time Management System, School Management System, Spring Boot Project, DevOps Full Stack Project, Personal Portfolio Website. Scroll to the Projects section for details.',
     experience: 'Networking internship completed at NREN (27 Apr – 14 Aug 2026) and DevOps Training completed at Texis Institute.',
     devops: 'Pipeline: Code → Git → GitHub → Build → Test → Docker → CI/CD → Deploy → Monitor.',
-    contact: 'Email: amirkant004@gmail.com | Phone: +977-9744338664 | LinkedIn: linkedin.com/in/amirkant-chaudhary-792a4133a',
+    contact: 'Email: amirkantchy383@gmail.com | Phone: +977-9744338664 | LinkedIn: linkedin.com/in/amirkant-chaudhary-792a4133a',
     github: 'Opening GitHub profile: github.com/AMIRKANT-THARU'
   };
 
@@ -434,8 +434,15 @@
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
   }
 
-  contactForm.addEventListener('submit', (e) => {
+  contactForm.noValidate = true;
+  const contactStatus = $('#contactStatus');
+  const sendButton = contactForm.querySelector('[type="submit"]');
+  let sendingMessage = false;
+
+  contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
+    if (sendingMessage || contactForm.elements._honey.value) return;
+    contactStatus.textContent = '';
 
     const name = $('#cf-name').value.trim();
     const email = $('#cf-email').value.trim();
@@ -462,12 +469,38 @@
       return;
     }
 
-    const mailBody = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
-    const mailSubject = encodeURIComponent(subject);
-    const mailtoLink = `mailto:amirkant004@gmail.com?subject=${mailSubject}&body=${mailBody}`;
+    sendingMessage = true;
+    sendButton.disabled = true;
+    sendButton.textContent = 'Sending…';
+    contactForm.setAttribute('aria-busy', 'true');
+    contactStatus.textContent = 'Sending your message…';
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 20000);
 
-    showToast('Message ready — opening your email client...');
-    window.location.href = mailtoLink;
+    try {
+      const response = await fetch(contactForm.action.replace('formsubmit.co/', 'formsubmit.co/ajax/'), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({ name, email, subject, message, _subject: subject, _honey: '' }),
+        signal: controller.signal
+      });
+      const result = await response.json();
+      if (!response.ok || !(result.success === true || result.success === 'true')) {
+        throw new Error('Submission was not accepted');
+      }
+      contactStatus.textContent = 'Thank you! Your message has been submitted.';
+      contactForm.reset();
+    } catch (error) {
+      contactStatus.textContent = error.name === 'AbortError'
+        ? 'The request timed out, so delivery could not be confirmed. Your message is still here. Try again later or email amirkantchy383@gmail.com.'
+        : 'Your message could not be submitted. Please try again or email amirkantchy383@gmail.com.';
+    } finally {
+      clearTimeout(timeout);
+      sendingMessage = false;
+      sendButton.disabled = false;
+      sendButton.textContent = 'Send message';
+      contactForm.removeAttribute('aria-busy');
+    }
   });
 
   /* ---------- 15. Back to top + footer year ---------- */

@@ -600,6 +600,11 @@ body.menu-open{ overflow:hidden; }
 .social-icon:hover{ color: var(--primary-soft); border-color: var(--primary-soft); transform: translateY(-3px); }
 
 .contact-form{ display:flex; flex-direction:column; gap: 18px; }
+.contact-form .btn, .contact-form .btn:hover, .contact-form .btn:active{ transform:none; }
+.contact-form .btn:disabled{ cursor:wait; opacity:.7; }
+.contact-honeypot{ display:none; }
+#contactStatus{ font-size:.85rem; overflow-wrap:anywhere; }
+#contactStatus:empty{ display:none; }
 .form-row{ display:flex; flex-direction:column; gap: 6px; position:relative; }
 .form-row label{ font-size:.82rem; color: var(--muted); }
 .form-row input, .form-row textarea{
