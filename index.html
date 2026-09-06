@@ -747,8 +747,12 @@
           <textarea id="cf-message" name="message" aria-describedby="err-message" rows="4" required></textarea>
           <span class="form-error" id="err-message"></span>
         </div>
+        <input type="hidden" name="_subject" value="New portfolio message">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_url" value="https://amirkant.com.np/">
         <input type="text" name="_honey" class="contact-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
         <button type="submit" class="btn btn-primary btn-full">Send message</button>
+        <p class="contact-delivery-note">Complete verification on the next page to send your message. You can also <a href="mailto:amirkantchy383@gmail.com">email me directly</a>.</p>
         <p id="contactStatus" role="status" aria-live="polite" aria-atomic="true"></p>
       </form>
     </div>
@@ -790,6 +794,6 @@
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
 </button>
 
-<script src="script.js?v=20260906-hover-zoom"></script>
+<script src="script.js?v=20260906-contact-delivery"></script>
 </body>
 </html>

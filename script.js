@@ -425,9 +425,11 @@
   const sendButton = contactForm.querySelector('[type="submit"]');
   let sendingMessage = false;
 
-  contactForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    if (sendingMessage || contactForm.elements._honey.value) return;
+  contactForm.addEventListener('submit', (e) => {
+    if (sendingMessage || contactForm.elements._honey.value) {
+      e.preventDefault();
+      return;
+    }
     contactStatus.textContent = '';
 
     const name = $('#cf-name').value.trim();
@@ -451,42 +453,29 @@
     else setFieldError('cf-message', 'err-message', '');
 
     if (!valid) {
+      e.preventDefault();
       contactForm.querySelector('[aria-invalid="true"]').focus();
       return;
     }
 
+    // Use the provider's hosted flow so verification and activation responses
+    // are visible. A cross-origin AJAX failure must not hide those steps.
+    contactForm.elements._subject.value = `Portfolio message: ${subject}`;
     sendingMessage = true;
     sendButton.disabled = true;
-    sendButton.textContent = 'Sending…';
+    sendButton.textContent = 'Opening verification…';
     contactForm.setAttribute('aria-busy', 'true');
-    contactStatus.textContent = 'Sending your message…';
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 20000);
+    contactStatus.textContent = 'Continue on FormSubmit to finish sending your message.';
+    // Allow the browser's normal POST; do not claim delivery or clear the form.
+  });
 
-    try {
-      const response = await fetch(contactForm.action.replace('formsubmit.co/', 'formsubmit.co/ajax/'), {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({ name, email, subject, message, _subject: subject, _honey: '' }),
-        signal: controller.signal
-      });
-      const result = await response.json();
-      if (!response.ok || !(result.success === true || result.success === 'true')) {
-        throw new Error('Submission was not accepted');
-      }
-      contactStatus.textContent = 'Thank you! Your message has been submitted.';
-      contactForm.reset();
-    } catch (error) {
-      contactStatus.textContent = error.name === 'AbortError'
-        ? 'The request timed out, so delivery could not be confirmed. Your message is still here. Try again later or email amirkantchy383@gmail.com.'
-        : 'Your message could not be submitted. Please try again or email amirkantchy383@gmail.com.';
-    } finally {
-      clearTimeout(timeout);
-      sendingMessage = false;
-      sendButton.disabled = false;
-      sendButton.textContent = 'Send message';
-      contactForm.removeAttribute('aria-busy');
-    }
+  // Restore the button when a visitor returns using the browser's Back button.
+  window.addEventListener('pageshow', () => {
+    sendingMessage = false;
+    sendButton.disabled = false;
+    sendButton.textContent = 'Send message';
+    contactForm.removeAttribute('aria-busy');
+    contactStatus.textContent = '';
   });
 
   /* ---------- 15. Back to top + footer year ---------- */

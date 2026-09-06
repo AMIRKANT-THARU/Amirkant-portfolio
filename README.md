@@ -87,13 +87,15 @@ Amirkant-portfolio/
    ```
    This is a static site; the build command validates JavaScript without generating a bundle.
 
-The contact form sends messages to **amirkantchy383@gmail.com** through [FormSubmit](https://formsubmit.co/), which supports this static GitHub Pages site without Gmail credentials in the code. JavaScript submits the form in place with validation, a sending state, and success/error feedback. Failed requests preserve the message. Without JavaScript, the form uses FormSubmit’s standard submission page.
+The contact form sends messages to **amirkantchy383@gmail.com** through [FormSubmit](https://formsubmit.co/), which supports this static GitHub Pages site without Gmail credentials in the code. The browser posts directly to FormSubmit, where visitors complete verification and see the submission result. JavaScript validates fields and prevents repeated clicks; delivery also works without JavaScript. The form does not claim inbox delivery or clear the message before the provider responds. The visitor email becomes the Reply-To address. No Gmail password or API secret belongs in this repository.
 
 ### Activate contact email delivery
 
-1. Open the deployed portfolio and submit the contact form once.
+1. Deploy the updated files, open https://amirkant.com.np/, and submit the contact form once. Complete FormSubmit’s verification on the next page.
 2. Check **amirkantchy383@gmail.com**, including Spam, for FormSubmit’s activation email and confirm the address.
-3. Submit another message and verify it arrives in the inbox. Activation and actual inbox delivery must be checked by the mailbox owner.
+3. Return to the portfolio and submit another message. Verify it arrives in the inbox and that Reply addresses the visitor. Activation and actual inbox delivery must be checked by the mailbox owner.
+
+The previous AJAX handler replaced network failures and provider rejections with the same generic error. The hosted submission flow exposes provider verification, activation, or error responses instead of hiding them. Changing code cannot bypass recipient activation. If email still does not arrive after activation, check Spam and FormSubmit’s service response; contact their support if needed.
 
 Form submissions (name, email, subject, and message) are processed by FormSubmit. The form includes a honeypot spam field. Service availability and filtering affect delivery; a successful HTTP submission confirms acceptance, not inbox receipt.
 
