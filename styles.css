@@ -274,7 +274,7 @@ body.menu-open{ overflow:hidden; }
 .btn, .btn:hover, .btn:active{ transform:none; transform-origin:center; }
 .btn > *{ transform:none; }
 .btn-primary{
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  background: #5b21b6;
   color: #fff; box-shadow: 0 10px 30px -10px var(--glow);
 }
 .btn-primary:hover{ box-shadow: 0 16px 36px -10px var(--glow); }
