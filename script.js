@@ -10,7 +10,7 @@
    7. Reveal on scroll (Intersection Observer)
    8. Animated counters
    9. Typewriter role text
-   10. Terminal card tilt + magnetic buttons
+   10. Terminal card tilt
    11. Project card mouse spotlight
    12. Project details modal
    13. Interactive terminal
@@ -246,7 +246,7 @@
   }
   typewriter();
 
-  /* ---------- 10. Terminal tilt + magnetic buttons ---------- */
+  /* ---------- 10. Terminal tilt ---------- */
   const tiltCard = $('#tiltCard');
   if (tiltCard && !prefersReducedMotion && window.matchMedia('(hover: hover)').matches) {
     tiltCard.addEventListener('mousemove', (e) => {
@@ -257,20 +257,6 @@
     });
     tiltCard.addEventListener('mouseleave', () => {
       tiltCard.style.transform = 'perspective(900px) rotateY(0) rotateX(0)';
-    });
-  }
-
-  if (!prefersReducedMotion && window.matchMedia('(hover: hover)').matches) {
-    $$('[data-magnetic]').forEach((btn) => {
-      btn.addEventListener('mousemove', (e) => {
-        const rect = btn.getBoundingClientRect();
-        const x = e.clientX - rect.left - rect.width / 2;
-        const y = e.clientY - rect.top - rect.height / 2;
-        btn.style.transform = `translate(${x * 0.18}px, ${y * 0.35}px)`;
-      });
-      btn.addEventListener('mouseleave', () => {
-        btn.style.transform = 'translate(0, 0)';
-      });
     });
   }
 

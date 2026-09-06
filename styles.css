@@ -25,6 +25,7 @@
 
 /* ---------- 1. Tokens & resets ---------- */
 :root{
+  --heading-orange: #c96818;
   --bg: #070a10;
   --bg-alt: #0a0e16;
   --surface: rgba(255,255,255,0.045);
@@ -34,9 +35,9 @@
   --muted: #90a0b3;
   --muted-dim: #5c6a7d;
   --primary: #4c9cf0;
-  --primary-soft: #7fb6f7;
-  --secondary: #8c7cf6;
-  --cyan: #46d9c9;
+  --primary-soft: #ff0000;
+  --secondary: #09ff00;
+  --cyan: lch(53.23% 104.58 40);
   --border: rgba(255,255,255,0.09);
   --border-strong: rgba(255,255,255,0.16);
   --glow: rgba(76,156,240,0.32);
@@ -270,18 +271,19 @@ body.menu-open{ overflow:hidden; }
   border: 1px solid transparent; white-space:nowrap;
   transition: transform .25s var(--ease), box-shadow .25s var(--ease), border-color .25s var(--ease), background .25s var(--ease), color .25s var(--ease);
 }
-.btn svg{ transition: transform .25s var(--ease); }
+.btn, .btn:hover, .btn:active{ transform:none; transform-origin:center; }
+.btn > *{ transform:none; }
 .btn-primary{
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: #fff; box-shadow: 0 10px 30px -10px var(--glow);
 }
-.btn-primary:hover{ transform: translateY(-2px); box-shadow: 0 16px 36px -10px var(--glow); }
-.btn-primary:hover svg{ transform: translateX(3px); }
+.btn-primary:hover{ box-shadow: 0 16px 36px -10px var(--glow); }
+
 
 .btn-ghost{
   background: var(--surface); border-color: var(--border); color: var(--text);
 }
-.btn-ghost:hover{ border-color: var(--primary-soft); color: var(--primary-soft); transform: translateY(-2px); }
+.btn-ghost:hover{ border-color: var(--primary-soft); color: var(--primary-soft); }
 
 .btn-text{ color: var(--muted); padding-inline: 6px; }
 .btn-text:hover{ color: var(--primary-soft); }
@@ -326,8 +328,7 @@ body.menu-open{ overflow:hidden; }
   margin-bottom: 14px;
 }
 .hero-name{
-  background: linear-gradient(100deg, var(--primary), var(--cyan) 55%, var(--secondary));
-  -webkit-background-clip: text; background-clip:text; color:transparent;
+  color: var(--heading-orange);
 }
 
 .hero-role{
@@ -416,7 +417,7 @@ body.menu-open{ overflow:hidden; }
   border: 1px solid var(--border); background: var(--surface);
   transition: border-color .25s, transform .25s, color .25s;
 }
-.tag:hover{ border-color: var(--primary-soft); color: var(--primary-soft); transform: translateY(-2px); }
+.tag:hover{ border-color: var(--primary-soft); color: var(--primary-soft); }
 
 /* ---------- 11. Timeline ---------- */
 .timeline{ position:relative; display:flex; flex-direction:column; gap: 36px; padding-left: 34px; }
@@ -588,7 +589,7 @@ body.menu-open{ overflow:hidden; }
   border: 1px solid var(--border); border-radius: var(--radius-s); background: var(--surface);
   font-size:.92rem; transition: border-color .25s, transform .25s;
 }
-.contact-card:hover{ border-color: var(--primary-soft); transform: translateX(4px); }
+.contact-card:hover{ border-color: var(--primary-soft); }
 .contact-card svg{ color: var(--primary-soft); flex-shrink:0; }
 
 .social-row{ display:flex; gap: 12px; }
@@ -597,7 +598,7 @@ body.menu-open{ overflow:hidden; }
   border:1px solid var(--border); background: var(--surface); color: var(--muted);
   transition: color .25s, border-color .25s, transform .25s;
 }
-.social-icon:hover{ color: var(--primary-soft); border-color: var(--primary-soft); transform: translateY(-3px); }
+.social-icon:hover{ color: var(--primary-soft); border-color: var(--primary-soft); }
 
 .contact-form{ display:flex; flex-direction:column; gap: 18px; }
 .contact-form .btn, .contact-form .btn:hover, .contact-form .btn:active{ transform:none; }
@@ -745,8 +746,7 @@ body{ font-size:1rem; isolation:isolate; }
 }
 .welcome-mark{
   font-family:var(--font-mono); font-size:clamp(3rem,10vw,6rem); font-weight:600;
-  background:linear-gradient(100deg,var(--primary),var(--cyan),var(--secondary));
-  background-clip:text; color:transparent; animation:welcome-arrive .7s both;
+  color:var(--heading-orange); animation:welcome-arrive .7s both;
 }
 .welcome-intro p{ font-size:1rem; letter-spacing:.12em; animation:welcome-arrive .7s .15s both; }
 .welcome-line{ width:160px; height:2px; background:linear-gradient(90deg,var(--primary),var(--cyan)); transform-origin:left; animation:welcome-line .9s both; }
@@ -800,4 +800,14 @@ body{ font-size:1rem; isolation:isolate; }
 @media (prefers-reduced-motion:reduce){
   .welcome-intro{ display:none; }
   .tech-symbol{ animation:none; }
+}
+
+/* Buttons zoom around their center without following the cursor. */
+.btn, button, .social-icon, .contact-card, .tag{
+  scale: 1;
+  transition: scale .2s var(--ease), box-shadow .25s var(--ease), border-color .25s var(--ease), background .25s var(--ease), color .25s var(--ease), opacity .25s var(--ease);
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference){
+  .btn:hover, button:enabled:hover, .social-icon:hover, .contact-card:hover, .tag:hover{ scale: 1.03; }
+  button:disabled:hover{ scale: 1; }
 }
