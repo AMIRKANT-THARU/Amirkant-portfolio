@@ -37,6 +37,38 @@
   const $ = (sel, ctx = document) => ctx.querySelector(sel);
   const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
 
+  // Keep both portraits in one frame, rotating only once both images are ready.
+  const portraitSlides = $$('.portrait-slide');
+  const portraitPause = $('.portrait-pause');
+  if (portraitSlides.length > 1 && portraitPause) {
+    let activePortrait = 0;
+    let portraitTimer;
+    let paused = prefersReducedMotion;
+
+    function updatePortraitPlayback() {
+      clearInterval(portraitTimer);
+      portraitPause.textContent = paused ? '▶' : 'Ⅱ';
+      portraitPause.setAttribute('aria-label', paused ? 'Play portrait slideshow' : 'Pause portrait slideshow');
+      portraitPause.setAttribute('aria-pressed', String(paused));
+      if (paused || document.hidden) return;
+      portraitTimer = setInterval(() => {
+        portraitSlides[activePortrait].classList.remove('is-active');
+        activePortrait = (activePortrait + 1) % portraitSlides.length;
+        portraitSlides[activePortrait].classList.add('is-active');
+      }, 3000);
+    }
+
+    Promise.all(portraitSlides.map((slide) => slide.decode())).then(() => {
+      portraitPause.hidden = false;
+      portraitPause.addEventListener('click', () => {
+        paused = !paused;
+        updatePortraitPlayback();
+      });
+      document.addEventListener('visibilitychange', updatePortraitPlayback);
+      updatePortraitPlayback();
+    }).catch(() => { /* Keep the original portrait if another image cannot load. */ });
+  }
+
   /* ---------- 2. Theme toggle ---------- */
   const THEME_KEY = 'portfolio-theme';
   const themeToggle = $('#themeToggle');

@@ -15,6 +15,8 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://formsubmit.co">
+<link rel="dns-prefetch" href="https://formsubmit.co">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="styles.css?v=20260906-hover-zoom">
@@ -114,7 +116,13 @@
     </div>
 
     <figure class="hero-portrait reveal" data-reveal-delay="150">
-      <div class="portrait-frame"><img src="1.png" alt="Amir kant Chaudhary" width="1086" height="1448" fetchpriority="high"></div>
+      <div class="portrait-frame">
+        <div class="portrait-slides" role="img" aria-label="Portraits of Amir kant Chaudhary">
+          <img class="portrait-slide is-active" src="1.png" alt="" width="1086" height="1448" fetchpriority="high">
+          <img class="portrait-slide" src="2.png" alt="" width="1086" height="1448" decoding="async">
+        </div>
+        <button class="portrait-pause" type="button" aria-label="Pause portrait slideshow" aria-pressed="false" hidden>Ⅱ</button>
+      </div>
       <figcaption><span class="status-dot" aria-hidden="true"></span> Building with curiosity. Growing with purpose.</figcaption>
     </figure>
     <div class="hero-visual reveal" data-reveal-delay="250">
